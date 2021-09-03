@@ -1,0 +1,330 @@
+/*#############DEFAULTS#####################*/
+
+*
+{
+    box-sizing: border-box;
+}
+nav,header,footer
+{
+    display:block;
+}
+body
+{
+    line-height:1 ;
+    margin:0;
+    font-family: 'Anton';
+}
+
+
+.container
+{
+    margin:auto;
+    width:100%;
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+.box
+{
+    background-color: white;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75),
+                0px 2px 3px 0px rgba(0,0,0,0.1)    ;
+    text-align: center; 
+    margin:8px 15px 15px 15px; 
+    padding:5px;   
+    border-radius:5px ;       
+
+}
+
+div.icon
+{
+    width:100%;
+
+    margin:0px 0px 30px 0px;
+}
+
+div.icon #logo
+{
+    
+    width:100px;
+    height: 100px;
+}
+
+div.image2 img
+{
+    width:100%;
+    display:block ;
+    margin:auto;
+    box-shadow: -2px -2px 50px 2px rgba(0,0,0,0.75);
+}
+
+div.image2 #randomimage
+{
+    width:500px;
+    height:350px ;
+}
+
+label
+{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight:bolder ;
+}
+
+p
+{
+    font-size: 20px;
+    line-height:2em;
+}
+
+article p
+{
+    font-size: 20px;
+    padding:25px;
+}
+
+
+/*###############NAV-BAR######################*/
+
+nav
+{
+    width:100%;
+    margin:0;
+}
+
+nav ul
+{
+    background-color: rgb(212, 208, 208);
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li
+{
+    list-style:none;
+    float:left;
+    margin-right:10px;
+}
+
+ul.topnav li.topnav-right
+{
+    list-style:none;
+    float:right;
+}
+
+ul.topnav li a
+{
+    display:block;
+    text-decoration: none;
+    min-height:16px;
+    text-align:center;
+    padding:14px;
+    text-transform: uppercase;
+    color:rgb(165, 163, 163);
+}
+
+ul.topnav li a:hover
+{
+    background-color: rgb(54, 54, 212);
+    color:black;
+}
+
+ul.topnav li.dropdownIcon
+{
+    display:none;
+}
+
+/*####################BELOW NAV BAR##########################*/
+
+#section-1-gradient
+{
+    background:-webkit-linear-gradient(rgb(255, 255, 255),rgb(201, 218, 155));
+}
+
+.row
+{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display:table;
+    clear:both;
+    content:"";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+h1.larger
+{
+    color:black;
+    font-size: 56px;
+    margin:0;
+    line-height: 70px;
+}
+
+input 
+{
+    border-radius: 10px;
+    min-width: 100px;
+    padding:5px;
+    color:rgb(36, 35, 35);
+}
+
+form 
+{
+    color:rgb(92, 0, 0);
+}
+
+.leftside-col
+{
+    margin-left:7%;
+}
+
+
+
+input[type="submit"]
+{
+    background:linear-gradient(black,grey) ;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+/*#################SECTION 2###########################*/
+
+.section-2-header
+{
+    text-align: center;
+    font-size:30px ;
+}
+
+button
+{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border-radius:10px ;
+    padding:10px 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.learn
+{
+    display:block ;
+    margin:auto;
+    text-align: center;
+}
+
+/*##############FOOTER##################*/
+
+.footsy
+{
+    background-color: rgb(92, 87, 87);
+    margin:auto;
+    line-height: 2;
+    padding-left:10%;
+}
+
+footer.footsy h1
+{
+    color:white;
+    font-size:30px;
+}
+
+footer.footsy ul
+{
+    list-style: none;
+    text-align: left;
+    
+}
+
+
+/*##################MOBILE##########################*/
+@media screen and (max-width:680px)
+{
+    ul.topnav li:not(:nth-child(1))
+    {
+        display:none;
+    }
+
+
+ul.topnav li.dropdownIcon
+{
+    display:block;
+    float:right;
+    margin:0;
+}
+
+ul.topnav.responsive li.dropdownIcon
+{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+ul.topnav.responsive 
+{
+    position:relative ;
+}
+
+ul.topnav.responsive li
+{
+    display:inline;
+    float:none;
+}
+
+ul.topnav.responsive li a
+{
+    display:block;
+    text-align:left;
+}
+
+.col-6,.col-4,.col-7,.col-5
+{
+    width:100%;
+    margin:0;
+}
+
+.video-container
+{
+    position:relative ;
+    width:100%;
+    margin:auto;
+    overflow:hidden ;
+}
+
+div.image2 img
+{
+    width:100%;
+
+}
+
+div.mobilestack
+{
+    display:block;
+    width:50%;
+}
+
+}
